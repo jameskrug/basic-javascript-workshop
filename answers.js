@@ -101,7 +101,7 @@ function factorialCalc(num){
 
 factorialCalc(0);
 factorialCalc(5);
-*/
+
 
 function longestWord(str){
     var thisWord = "";
@@ -121,3 +121,25 @@ function longestWord(str){
 }
 
 longestWord("a bc def ghij klmno pqr stu vwxyz");
+
+
+*/
+
+
+function properCaps(str){
+    var capsStr = "";
+    for (var i = 0; i < str.length; i++){
+        if ((i == 0) || (str.charAt(i-1) == " ")){
+            capsStr = capsStr + str.charAt(i).toUpperCase();
+        }
+        else{
+            capsStr = capsStr + str.charAt(i).toLowerCase();
+        }
+    }
+    console.log(capsStr);
+}
+
+properCaps("hELlo tHere HoW goES it?");
+
+
+
