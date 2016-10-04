@@ -80,5 +80,12 @@ function stringRepeater(str, num){
 stringRepeater("Hello", 8);
 
 
+function stringReverser(str){
+    var reverseString = "";
+    for (var i = 0; i < str.length + 1; i ++){
+        reverseString = reverseString + str.charAt(str.length - i);
+    }
+    console.log(reverseString);
+}
 
-
+stringReverser("forwards then backwards");
