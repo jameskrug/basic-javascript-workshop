@@ -21,3 +21,19 @@ function letterPosition(str, num){
 }
 
 letterPosition("we three kings", 0);
+
+function addTwoNumbers(num1,num2){
+    var x = num1 + num2;
+    console.log(x);
+}
+
+addTwoNumbers(10,3);
+
+//if you give the function a string instead of a number, it will turn the other input into a string as well.  
+addTwoNumbers(4,"joe");
+
+//Otherwise it will give a syntax error
+//addTwoNumbers(3,$);
+
+
+
