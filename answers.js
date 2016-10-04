@@ -89,3 +89,16 @@ function stringReverser(str){
 }
 
 stringReverser("forwards then backwards");
+
+
+function factorialCalc(num){
+    var x = 1;
+    for (var i = 1; i <= num; i ++){
+        x *= i;
+    }
+    console.log(x);
+}
+
+factorialCalc(0);
+factorialCalc(5);
+
