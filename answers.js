@@ -151,7 +151,7 @@ function largestInArray(theArray){
 }
 
 largestInArray([23,42,32,1,101]);
-*/
+
 
  function biggerThanFive(x){
         return x > 5;
@@ -166,3 +166,16 @@ function onlyTruthys(theArray){
 }
 
 onlyTruthys([1,2,3,4,5,6,7,8,9,10,21,2,3,55,44]);
+
+*/
+
+function arrayAdder(theArray){
+    var x = 0;
+    for (var i = 0; i < theArray.length; i ++){
+        x += theArray[i];
+        console.log(theArray[i]);
+    }
+    console.log(x);
+}
+
+arrayAdder([1,2,3,4,5,5,6,7,4,4,5]);
