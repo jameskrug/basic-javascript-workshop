@@ -123,8 +123,6 @@ function longestWord(str){
 longestWord("a bc def ghij klmno pqr stu vwxyz");
 
 
-*/
-
 
 function properCaps(str){
     var capsStr = "";
@@ -141,5 +139,16 @@ function properCaps(str){
 
 properCaps("hELlo tHere HoW goES it?");
 
+*/
 
+function largestInArray(theArray){
+    var x = 0;
+    for(var i = 1; i <= theArray.length; i++){
+        if (theArray[i] > x) {
+            x = theArray[i];
+        }
+    }
+    console.log(x);
+}
 
+largestInArray([23,42,32,1,101]);
