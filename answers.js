@@ -69,5 +69,16 @@ simpleMath(8,4,"div");
 simpleMath(10,11,"jibberish");
 
 
+function stringRepeater(str, num){
+    var repeatedString = "";
+    for (var i = 1; i <= num; i++){
+        repeatedString = repeatedString+str;
+    }
+    console.log(repeatedString);
+}
+
+stringRepeater("Hello", 8);
+
+
 
 
