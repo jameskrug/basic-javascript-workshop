@@ -1,4 +1,4 @@
-//a one line comment
+/*//a one line comment
 function firstLetter(str) {
     var x = str.charAt(0);
     console.log(x);
@@ -101,4 +101,23 @@ function factorialCalc(num){
 
 factorialCalc(0);
 factorialCalc(5);
+*/
 
+function longestWord(str){
+    var thisWord = "";
+    var theLongest = "";
+    for (var i = 0; i < str.length; i++){
+        if (str.charAt(i) == " "){
+            if (thisWord.length > theLongest.length){
+                theLongest = thisWord;
+            }
+            thisWord = "";
+        }
+        else{
+            thisWord = thisWord + str.charAt(i);    
+        }
+    }
+    console.log(theLongest);
+}
+
+longestWord("a bc def ghij klmno pqr stu vwxyz");
