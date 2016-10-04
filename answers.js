@@ -35,5 +35,15 @@ addTwoNumbers(4,"joe");
 //Otherwise it will give a syntax error
 //addTwoNumbers(3,$);
 
+function multiplyTwoNumbers(num1, num2) {
+    var x = num1 * num2;
+    console.log(x);
+}
+
+multiplyTwoNumbers(23,6);
+//if you give a number and a string, the function returns an NaN
+multiplyTwoNumbers(8,"joe");
+
+
 
 
