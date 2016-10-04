@@ -45,5 +45,29 @@ multiplyTwoNumbers(23,6);
 multiplyTwoNumbers(8,"joe");
 
 
+function simpleMath(num1, num2, str) {
+    var x = 0;
+    if (str === "add"){
+        x = num1+num2;
+    }
+    else if (str === "subtract"){
+        x = num1-num2;
+    }
+    else if (str === "mult"){
+        x = num1*num2;
+    }
+    else if (str === "div"){
+        x = num1/num2;
+    }
+    console.log(x);
+}
+
+simpleMath(4,8,"add");
+simpleMath(10,4,"subtract");
+simpleMath(4,6,"mult");
+simpleMath(8,4,"div");
+simpleMath(10,11,"jibberish");
+
+
 
 
