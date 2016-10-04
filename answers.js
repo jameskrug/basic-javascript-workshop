@@ -139,7 +139,6 @@ function properCaps(str){
 
 properCaps("hELlo tHere HoW goES it?");
 
-*/
 
 function largestInArray(theArray){
     var x = 0;
@@ -152,3 +151,18 @@ function largestInArray(theArray){
 }
 
 largestInArray([23,42,32,1,101]);
+*/
+
+ function biggerThanFive(x){
+        return x > 5;
+    }
+
+function onlyTruthys(theArray){
+    var filteredArray = []
+   
+    filteredArray = theArray.filter(biggerThanFive);
+    console.log(filteredArray);
+    
+}
+
+onlyTruthys([1,2,3,4,5,6,7,8,9,10,21,2,3,55,44]);
