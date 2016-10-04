@@ -12,4 +12,12 @@ function lastLetter(str) {
     console.log(x);
 }
 
-lastLetter("");
+lastLetter("pumpkin");
+
+
+function letterPosition(str, num){
+    var x = str.charAt(num);
+    console.log(x);
+}
+
+letterPosition("we three kings", 0);
