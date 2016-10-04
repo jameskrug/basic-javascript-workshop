@@ -178,7 +178,8 @@ function arrayAdder(theArray){
 }
 
 arrayAdder([1,2,3,4,5,5,6,7,4,4,5]);
-*/
+
+
 
 function uniqueInArray(firstArray, secondArray){
     var onlyUnique = [];
@@ -203,3 +204,17 @@ function uniqueInArray(firstArray, secondArray){
 }
 
 uniqueInArray([1,2,3,4,5,6], [4,5,6,7,8,9]);
+*/
+
+function miniChallenge(theArray, theFunction){
+    var newArray = [];
+    for (var i = 0; i < theArray.length; i++){
+        newArray[i] = theFunction(theArray[i]);
+    }
+    console.log(newArray);
+}
+
+miniChallenge([33,21,5,53,211,3,44], 
+function addSome(num){
+    return num+4;
+})
