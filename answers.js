@@ -167,7 +167,6 @@ function onlyTruthys(theArray){
 
 onlyTruthys([1,2,3,4,5,6,7,8,9,10,21,2,3,55,44]);
 
-*/
 
 function arrayAdder(theArray){
     var x = 0;
@@ -179,3 +178,28 @@ function arrayAdder(theArray){
 }
 
 arrayAdder([1,2,3,4,5,5,6,7,4,4,5]);
+*/
+
+function uniqueInArray(firstArray, secondArray){
+    var onlyUnique = [];
+    for (var i = 0; i < firstArray.length; i++){
+        for (var j = 0; j < secondArray.length; j++){
+            if (firstArray[i] == secondArray[j]){
+                firstArray[i] = false;
+                secondArray[j] = false;
+            }
+        }
+        if (firstArray[i] != false){
+            onlyUnique.push(firstArray[i]);
+        }
+        
+    }
+    for (var j = 0; j < secondArray.length; j++){
+        if (secondArray[j] != false){
+            onlyUnique.push(secondArray[j])
+        }
+    }
+    console.log(onlyUnique);
+}
+
+uniqueInArray([1,2,3,4,5,6], [4,5,6,7,8,9]);
