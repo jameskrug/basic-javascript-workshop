@@ -1,11 +1,11 @@
 
 
 function theCowSays(str){
-    //fill blank space at end with " "
+    
     console.log(str.length);
     var allChars = str.split("");
     var lines = str.length / 30;
-    console.log(lines);
+
     
     for (var y = 0; y < lines; y++){
         var lookForSpaces = "";
@@ -20,7 +20,8 @@ function theCowSays(str){
         }
     }
     lines = (allChars.length / 30) + 1;
-    console.log(lines);
+
+    //determine and print underscores
     var strUnder = "";
     var underscores = 30;
     if (lines < 2){
@@ -31,17 +32,17 @@ function theCowSays(str){
     }
     console.log("  " + strUnder);
    
+   
     var typeLine = [""];
-    
     if (allChars.length > 30){
-        var leftOver = str.length % 30;
+        var leftOver = allChars.length % 30;
         leftOver = 30 - leftOver;
-        for (var l = 0; l < leftOver; l++){
-            str = str + " ";
+        for (var l = 0; l <= leftOver; l++){
+            allChars.push(" ");
         }
     }
    
-    for(var j = 0; j <= lines; j++){
+    for(var j = 0; j < lines; j++){
         for (var k = 0; k < 30; k++){
             if (k == 0){
                 typeLine[j] = "";
@@ -58,21 +59,10 @@ function theCowSays(str){
         for(var n = 1; n < lines-1; n ++){
             console.log("| " + typeLine[n] + " |");
         }
-        console.log("\\ " + typeLine[lines-1] + " /");    
-        
+        console.log("\\ " + typeLine[lines] + " /");    
     }
-    /*
-    
-   
-    if (lines >= 2){
-        console.log("/ " + typeLine[0] + " \\");
-    }
-    
-    
-    */
-    
-    
-    //Dashes on bottom
+
+
     var strDash = "";
     var dashes = 30;
         if (lines < 2){
